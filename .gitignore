@@ -1,0 +1,22 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Angular / Node
+**/node_modules/
+**/dist/
+**/.angular/
+
+# IDE and OS
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local configuration
+appsettings.Local.json
+.env
+

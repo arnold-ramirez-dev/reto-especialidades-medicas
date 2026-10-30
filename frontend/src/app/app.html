@@ -1,0 +1,30 @@
+<header class="topbar">
+  <div class="topbar-content">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">RH</span>
+      <div><strong>PeopleOps</strong><small>Gestión de compensaciones</small></div>
+    </div>
+    <div class="user-chip">
+      <span aria-hidden="true">AR</span>
+      <div><strong>Administrador</strong><small>Back office</small></div>
+    </div>
+  </div>
+</header>
+
+@if (notification.message(); as message) {
+  <div [class]="'notification notification-' + message.type" role="alert">
+    <span>{{ message.text }}</span>
+    <button
+      type="button"
+      class="notification-close"
+      aria-label="Cerrar"
+      (click)="notification.clear()"
+    >
+      ×
+    </button>
+  </div>
+}
+
+<main class="content">
+  <router-outlet />
+</main>

@@ -1,0 +1,99 @@
+:root {
+  --primary: #1b5eab;
+  --primary-dark: #134980;
+  --text: #1f2933;
+  --text-muted: #616e7c;
+  --border: #d9e2ec;
+  --surface: #ffffff;
+  --background: #f3f6fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: var(--text);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgb(9 30 66 / 4%);
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  min-height: 38px;
+  padding: 8px 15px;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  border-color: #c7d1df;
+  background: #fff;
+  color: #44546f;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  border-color: #9fb0c7;
+  background: #f6f8fb;
+}
+
+.btn-danger {
+  background: #c9372c;
+  color: #fff;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #ae2a19;
+}
+
+select,
+input {
+  min-width: 180px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
